@@ -1,0 +1,13 @@
+{
+  "name": "soea81-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dashboard da 81ª SOEA conectada ao Supabase (site estático)",
+  "scripts": {
+    "typecheck": "node build.mjs --check",
+    "build": "node build.mjs",
+    "preview": "npx --yes serve dist"
+  },
+  "engines": { "node": ">=18" }
+}
