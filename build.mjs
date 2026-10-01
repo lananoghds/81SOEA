@@ -1,6 +1,6 @@
 // Build estático: injeta as variáveis públicas do Supabase em src/index.html -> dist/index.html
 import fs from "node:fs";
-const html = fs.readFileSync(new URL("./src/index.html", import.meta.url), "utf8");
+const html = fs.readFileSync(new URL("./index.html", import.meta.url), "utf8");
 if (process.argv.includes("--check")) { // verificação de sintaxe do JavaScript embutido
   const js = html.split("<script>")[1].split("</script>")[0];
   new Function(js); console.log("Verificação OK: JavaScript sem erros de sintaxe."); process.exit(0);
